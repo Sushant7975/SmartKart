@@ -359,7 +359,7 @@ ul {
 
 /* ------media query for less than 600px screen----- */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .row {
     text-align: center;
   }
