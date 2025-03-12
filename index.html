@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartKart | E-commerce website</title>
+    <link  rel="icon" href="./Images/SmartKart.png" sizes="32*32">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="./Images/SmartKart.png" />
+          </div>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact-section">Contact us</a></li>
+              <li><a href="">Account</a></li>
+            </ul>
+          </nav>
+          <img src="./Images/cart.png" width="30px" height="30px" />
+          <img
+            src="./Images/menu.png"
+            class="menu-icon"
+            onclick="menuToggle()"
+          />
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1>
+              Give Your Workout <br />
+              A New Style!
+            </h1>
+            <p>
+              Success isn't always about greatness. It's about consistency.
+              <br />
+              Consistant hardwork gains success. Greatness will come.
+            </p>
+            <a href="" class="btn">Explore Now &#10140;</a>
+          </div>
+          <div class="col-2">
+            <img src="./Images/image1.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Featured Categories -->
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="./Images/category-1.jpg" />
+          </div>
+          <div class="col-3">
+            <img src="./Images/category-2.jpg" />
+          </div>
+          <div class="col-3">
+            <img src="./Images/category-3.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Featured Products -->
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="./Images/product-1.jpg" />
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./Images/product-2.jpg" />
+          <h4>hrx Sport shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./Images/product-3.jpg" />
+          <h4>Sporty trouser</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./Images/product-4.jpg" />
+          <h4>Blue Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+      </div>
+      <div id="products">
+      <h2 class="title">Latest Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="./Images/product-5.jpg" />
+          <h4>Running shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./Images/product-6.jpg" />
+          <h4>Puma Black T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./Images/product-7.jpg" />
+          <h4>hrx Ankle length footie</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./Images/product-8.jpg" />
+          <h4>Fossil wrist watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img src="./Images/product-9.jpg" />
+          <h4>Daster Sporty watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./Images/product-10.jpg" />
+          <h4>Black-Red Studds </h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./Images/product-11.jpg" />
+          <h4>Trending sneakers</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./Images/product-12.jpg" />
+          <h4>Sporty black trouser</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- offer -->
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="./Images/exclusive.png" class="offer-img" />
+          </div>
+          <div class="col-2">
+            <p>Exclusively Available on Smartkart</p>
+            <h1>Smart Band 4</h1>
+            <small
+              >The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3)
+              AMOLED color full-touch display with adjustable brightness, so
+              everything is clear as can be.</small
+            ><br />
+            <a href="" class="btn">Buy Now &#10140;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonial -->
+    <div class="testimonial">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i
+              class="fa-solid fa-quote-left"
+              style="color: #ff523b; font-size: 34px"
+            ></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              recusandae animi at harum quos magnam obcaecati necessitatibus
+              debitis. Iusto, illum.
+            </p>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star" style="color: #ff523b"></i>
+            </div>
+            <img src="./Images/user-1.png" />
+            <h3>Sean Josef</h3>
+          </div>
+          <div class="col-3">
+            <i
+              class="fa-solid fa-quote-left"
+              style="color: #ff523b; font-size: 34px"
+            ></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              recusandae animi at harum quos magnam obcaecati necessitatibus
+              debitis. Iusto, illum.
+            </p>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star" style="color: #ff523b"></i>
+            </div>
+            <img src="./Images/user-2.png" />
+            <h3>Peter Parkar</h3>
+          </div>
+          <div class="col-3">
+            <i
+              class="fa-solid fa-quote-left"
+              style="color: #ff523b; font-size: 34px"
+            ></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              recusandae animi at harum quos magnam obcaecati necessitatibus
+              debitis. Iusto, illum.
+            </p>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star" style="color: #ff523b"></i>
+            </div>
+            <img src="./Images/user-3.png" />
+            <h3>Dean Bezos</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----brands----->
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="./Images/logo-godrej.png" />
+          </div>
+          <div class="col-5">
+            <img src="./Images/logo-oppo.png" />
+          </div>
+          <div class="col-5">
+            <img src="./Images/logo-coca-cola.png" />
+          </div>
+          <div class="col-5">
+            <img src="./Images/logo-paypal.png" />
+          </div>
+          <div class="col-5">
+            <img src="./Images/logo-philips.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+   <!-- ---contact us section--- -->
+
+  <section id="contact-section">
+    <div class="contact-bg">
+      <h3>Get in Touch with Us</h3>
+      <h2>contact us</h2>
+      <div class="line">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda iste facilis quos impedit fuga
+        nobis modi debitis laboriosam velit reiciendis quisquam alias corporis, maxime enim, optio ab dolorum sequi qui.
+      </p>
+    </div>
+  
+  
+    <div class="contact-body">
+      <div class="contact-info">
+        <div>
+          <span><i class="fas fa-mobile-alt"></i></span>
+          <span>Phone No.</span>
+          <span class="text">123-456-789</span>
+        </div>
+        <div>
+          <span><i class="fas fa-envelope-open"></i></span>
+          <span>E-mail</span>
+          <span class="text">smartkart123@ccare.com</span>
+        </div>
+        <div>
+          <span><i class="fas fa-map-marker-alt"></i></span>
+          <span>Address</span>
+          <span class="text">Shop No 16, Yash Paradise, Diva Nagar road, Sector-8, Airoli, Navi Mumbai, Maharashtra 400708</span>
+        </div>
+        <div>
+          <span><i class="fas fa-clock"></i></span>
+          <span>Opening Hours</span>
+          <span class="text">Monday - Friday (9:00 AM to 5:00 PM)</span>
+        </div>
+      </div>
+  
+      <div class="contact-form">
+        <form>
+          <div>
+            <input type="text" class="form-control" placeholder="First Name">
+            <input type="text" class="form-control" placeholder="Last Name">
+          </div>
+          <div>
+            <input type="email" class="form-control" placeholder="E-mail">
+            <input type="text" class="form-control" placeholder="Phone">
+          </div>
+          <textarea rows="5" placeholder="Message" class="form-control"></textarea>
+          <input type="submit" class="send-btn" value="send message">
+        </form>
+  
+        <div>
+          <img src="./Images/contact2-png.png" alt="">
+        </div>
+      </div>
+    </div>
+  
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.173914631822!2d72.99096112425359!3d19.143863049840387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf553477303d%3A0x3c0c1d9c9a406afd!2sSector%208%2C%20Airoli%2C%20Navi%20Mumbai%2C%20Maharashtra%20400708!5e0!3m2!1sen!2sin!4v1741706509480!5m2!1sen!2sin"
+        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+  
+    <div class="contact-footer">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-youtube"></a>
+      </div>
+    </div>
+  </section>
+
+    <!-----footer----->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="./Images/play-store.png" />
+              <img src="./Images/app-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="./Images/SmartKart.png" />
+            <p>
+              Our purpose is to sustainably make the pleasure and benefits of
+              sports accessible to the many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupens</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebbok</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">
+          <i class="fa-regular fa-copyright" style="color: #8a8a8a"></i>
+          Copyright 2025 SmartKart | Sushant Khot
+        </p>
+      </div>
+    </div>
+
+    <!-----js for toggle menu----->
+    
+    <script>
+      var menuItems = document.getElementById("menuItems");
+      menuItems.style.maxHeight = "0px";
+
+      function menuToggle() {
+        if (menuItems.style.maxHeight == "0px") {
+          menuItems.style.maxHeight = "200px";
+        } else {
+          menuItems.style.maxHeight = "0px"
+        }
+      }
+    </script>
+  </body>
+</html>
